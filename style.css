@@ -753,6 +753,7 @@ section{
     0 0 100px cyan, 0 0 200px cyan;
 }
 @media (max-width: 768px) {
+    
     .contact {
         grid-template-columns: 1fr; /* Agar layout menjadi satu kolom di layar kecil */
     }
@@ -785,4 +786,30 @@ section{
     background: #0ef;
     padding: 10px;
     border-radius: 0.5rem;
+
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  nav {
+    display: none; /* nav diganti dengan tombol menu (hamburger menu) */
+  }
+  .skills, .about-me, .portfolio {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Aturan untuk layar lebih besar (tablet & desktop) */
+@media (min-width: 769px) {
+  .skills {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
